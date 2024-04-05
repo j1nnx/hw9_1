@@ -19,7 +19,4 @@ def mask_card_or_account(input_str):
         return 'Счет ' + mask_account(words[1])
 
 
-def convert_data(input_data):
-    """функцию, которая принимает на вход строку, вида "2018-07-11T02:26:18.671407" и возвращает 11.07.2018"""
-    date_obj = datetime.strptime(input_data, "%Y-%m-%d %H:%M:%S.%f")
-    return date_obj.strftime('%d.%m.%Y')
+
